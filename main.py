@@ -5,13 +5,14 @@ import time
 import os
 from layer import TNet
 from utils import *
+from utils_xml import *
 from nn_utils import *
 from evals import *
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='TNet settings')
-    parser.add_argument("-ds_name", type=str, default="14semeval_rest", help="dataset name")
+    parser.add_argument("-ds_name", type=str, default="14semeval_laptop", help="dataset name")
     parser.add_argument("-n_filter", type=int, default=50, help="number of convolutional filters")
     parser.add_argument("-bs", type=int, default=64, help="batch size")
     parser.add_argument("-dim_w", type=int, default=300, help="dimension of word embeddings")
@@ -35,7 +36,7 @@ if __name__ == '__main__':
     if args.ds_name == '14semeval_rest':
         args.bs = 25
 
-    dataset, embeddings, embeddings_func, n_train, n_test = build_dataset(ds_name=args.ds_name, bs=args.bs,
+    dataset, embeddings, embeddings_func, n_train, n_test = build_dataset_xml(ds_name=args.ds_name, bs=args.bs,
                                                                           dim_w=args.dim_w, dim_func=args.dim_func)
 
     # update the size of the used word embeddings

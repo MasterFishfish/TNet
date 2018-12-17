@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sentences>
+    <sentence id="2339">
+        <text>I charge it at night and skip taking the cord with me because of the good battery life.</text>
+        <aspectTerms>
+            <aspectTerm term="cord" polarity="neutral" from="41" to="45"/>
+            <aspectTerm term="battery life" polarity="positive" from="74" to="86"/>
+        </aspectTerms>
+    </sentence>
+    <sentence id="812">
+        <text>I bought a HP Pavilion DV4-1222nr laptop and have had so many problems with the computer.</text>
+    </sentence>
+    <sentence id="1316">
+        <text>The tech guy then said the service center does not do 1-to-1 exchange and I have to direct my concern to the "sales" team, which is the retail shop which I bought my netbook from.</text>
+        <aspectTerms>
+            <aspectTerm term="service center" polarity="negative" from="27" to="41"/>
+            <aspectTerm term="&quot;sales&quot; team" polarity="negative" from="109" to="121"/>
+            <aspectTerm term="tech guy" polarity="neutral" from="4" to="12"/>
+        </aspectTerms>
+    </sentence>
+</sentences>
